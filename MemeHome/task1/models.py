@@ -21,5 +21,5 @@ class Tasks(models.Model):
     uid = models.ForeignKey(User1, on_delete = models.CASCADE)
     task_title = models.CharField(max_length=200) #minimum length validation will be done in forms
     task_description = models.CharField(max_length=2000, blank=True)
-    task_pic = models.ImageField(upload_to='/uploads', null=True)
+    task_pic = models.ImageField(upload_to='uploads/', null=True, blank=True)
     create_time_stamp = models.DateTimeField(auto_now_add=True)
