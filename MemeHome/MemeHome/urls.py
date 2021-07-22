@@ -19,9 +19,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+from . import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('task1.urls')),
+    path("",views.welcome, name="welcome"),
+    path('task1/',include('task1.urls')),
+    path('task2/', include('task2.urls')),
 ] 
 
 if settings.DEBUG:

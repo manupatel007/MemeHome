@@ -131,7 +131,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'task1.User1'
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/task1'
+
+LOGOUT_REDIRECT_URL = '/task1'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),

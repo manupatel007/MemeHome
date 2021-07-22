@@ -6,9 +6,13 @@
 
 <p>Hello! {{user.username|default:"Guest" }}</p>
 {% if user.is_authenticated %}
-    <a href="{% url 'logout' %}">Logout</a>
+    <p><a href="{% url 'createtask' %}">Create Post</a></p>
+    <p><a href="{% url 'viewtask' %}">View Posts</a></p>
+    <p><a href="{% url 'logout' %}">Logout</a></p>
 {% else %}
     <a href="{% url 'login' %}">Login</a>
+    <br>
+    <a href="{% url 'signup' %}">Register</a>
 {% endif %}
 
 {% endblock %}

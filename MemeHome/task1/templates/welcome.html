@@ -12,8 +12,9 @@
         <div class="col-8">
           <h1 class="mt-2">MEME HOME</h1>
           <hr class="mt-0 mb-4">
-          {% block content %}
-          {% endblock %}
+          <h3>Welcome! to this website, click on the button below as per your task's choice.</h3>
+            <a class="btn btn-success" href="{% url 'home' %}" role="button">Task 1</a>
+            <a class="btn btn-success" href="{% url 'hierarchy' %}" role="button">Task 2</a>
         </div>
       </div>
     </div>

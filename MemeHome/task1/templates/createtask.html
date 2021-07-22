@@ -4,10 +4,14 @@
 
 {% block content %}
 
-<form method="POST">
+<h2>Create Post</h2>
+
+<form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     {{form|crispy}}
-    <button type="submit">Submit</button>
+    <br>
+    <button type="submit" class="btn btn-success">Post it</button>
 </form>
-
+<br>
+<a class="btn btn-success" href="{% url 'viewtask' %}" role="button">Go Back</a>
 {% endblock %}

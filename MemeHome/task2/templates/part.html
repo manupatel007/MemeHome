@@ -1,0 +1,10 @@
+<div>
+    <h4>{{ dat.title }}</h4>
+ 
+    {% if dat.children %}
+        {% for dat in dat.children.all %}
+            {% include 'part.html' %}
+        {% endfor %}
+    {% endif %}
+    </div>
+</div>
