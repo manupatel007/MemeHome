@@ -20,14 +20,14 @@ task1 and task2 is tha name given to apps corresponding to these tasks.
 
 - [x] Overriding Default user model using AUTH_USER_MODEL
 - [x] Username should start with a/A and end with 1/0(Using Regex in models)
-- [x] Manually applied SHA 256 algo on password feild
+- [x] Manually applied SHA 256 algo on password field
 - [x] Basic validation on password(in forms.py)
 - [x] Task title validation of minimum characters.(in forms.py)
 - [x] Textarea for Task description in forms.
 - [x] Applying Pagination on queryset.
 - [x] Generating Fake data using Faker.
 - [x] Added Default image if no image in a post.
-- [x] Deploy on Django
+- [x] Deploy on Heroku.
 
 ## To dos(Task 2)
 
